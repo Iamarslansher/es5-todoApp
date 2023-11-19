@@ -43,9 +43,7 @@ function crntUserPrevTodo() {
   var user_id = currentUser.id;
   var prevAllTodos = JSON.parse(localStorage.getItem("allTodos"));
   if (prevAllTodos) {
-    userAllTodos = prevAllTodos.filter((elemt) => {
-      return elemt.userId == user_id;
-    });
+    userAllTodos = prevAllTodos;
 
     for (var i = 0; i < prevAllTodos.length; i++) {
       var preTodos = prevAllTodos[i];
