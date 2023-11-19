@@ -1,0 +1,26 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: #00bf89;
+}
+
+.navBar {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.rowContainer {
+  border-radius: 20px;
+  box-shadow: 0 0 5px white;
+  display: flex;
+  align-items: center;
+}
+
+.deleteBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+}

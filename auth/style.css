@@ -1,0 +1,46 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* toggleBtn css */
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#checkbox {
+  display: none;
+}
+
+.nav-toggleBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-label {
+  height: 20px;
+  width: 30px;
+  background-color: rgb(90, 88, 88);
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+}
+
+.toggle-ball {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  transition: all 0.3s linear;
+}
+
+#checkbox:checked + .toggle-label .toggle-ball {
+  background-color: black;
+  transform: translateX(12px);
+}
